@@ -8,7 +8,6 @@ public class Exercise2 {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter a piece of text: ");
         String text = input.nextLine();
-
         System.out.print("The rever of that piece of text: "+ reverse(text));
 
     }
@@ -17,8 +16,7 @@ public class Exercise2 {
 
         String[] splited = a.split("");
         int len = a.length();
-        int index = 0;
-        index = len-1;
+        int index = len-1;
         ArrayList revered_array = new ArrayList<>();
         for(int i = 0; i < len; i++){
             revered_array.add(splited[index]);
